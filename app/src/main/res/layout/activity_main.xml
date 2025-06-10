@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.2.tar.xz"
+        android:hint="Enter file URL" />
+
+    <Button
+        android:id="@+id/getInfoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get info"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/fileSizeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File size: ?"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/fileTypeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File type: ?"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/downloadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download"
+        android:layout_marginTop="16dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/bytesDownloadedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bytes downloaded: 0"
+        android:layout_marginTop="8dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
